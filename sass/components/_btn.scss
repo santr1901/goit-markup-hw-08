@@ -1,0 +1,21 @@
+.service-btn {
+  min-width: 200px;
+  max-height: 50px;
+  font-family: inherit; 
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--third-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color var(--transition-time) var(--transition-function) ;
+  &:hover, &:focus {
+    background-color: var(--btn-hover-color);
+  }
+  }
+  

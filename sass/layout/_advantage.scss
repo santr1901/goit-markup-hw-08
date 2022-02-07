@@ -1,0 +1,26 @@
+.advantage__list {
+    @extend %flex-list;
+  }
+  
+  .advantage__item {
+    @extend %flex-item;
+    flex-basis: calc(100%/4 - 30px);
+  }
+  
+  .advantage__item-icon {
+    height: 120px;
+    background-color: var(--bkground-color-two);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .advantage__item-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--first-color);
+    margin-bottom: 10px;
+  }

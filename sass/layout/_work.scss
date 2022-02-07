@@ -1,0 +1,31 @@
+.work {
+    padding-bottom: 94px;
+  }
+  
+  .work-list {
+   @extend %flex-list;
+  }
+  
+  .work-item {
+    @extend %flex-item;
+    flex-basis: calc(100%/3 - 30px);
+    position: relative;
+  }
+  
+  .work-name {
+    background-color: var(--work-name-bg);
+    position: absolute;
+    width: 100%;
+    padding: 27px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .work-name-txt {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--third-color);
+  }
