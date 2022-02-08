@@ -32,6 +32,7 @@ ul {
 img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -74,10 +75,22 @@ address {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
 .section {
@@ -110,11 +123,11 @@ address {
 
 .main-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   color: var(--first-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .social-list {
@@ -660,6 +673,24 @@ address {
 
 .team {
   background-color: var(--bkground-color-two);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team-list {
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .team-item {
@@ -669,8 +700,16 @@ address {
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
   padding-bottom: 30px;
-  -ms-flex-preferred-size: calc(100%/4 - 30px);
-      flex-basis: calc(100%/4 - 30px);
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-item {
+    -ms-flex-preferred-size: calc(100%/2 - 30px);
+        flex-basis: calc(100%/2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .team-name,
@@ -963,7 +1002,7 @@ address {
   line-height: 1.87;
 }
 
-.advantage__list, .work-list, .team-list, .clients-list, .example-list {
+.advantage__list, .work-list, .clients-list, .example-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -973,7 +1012,7 @@ address {
   margin-top: -30px;
 }
 
-.advantage__item, .work-item, .team-item, .clients-item, .example-item {
+.advantage__item, .work-item, .clients-item, .example-item {
   margin-left: 30px;
   margin-top: 30px;
 }

@@ -1,9 +1,16 @@
 .team {
     background-color: var(--bkground-color-two);
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   
   .team-list {
-    @extend %flex-list;
+    // @extend %flex-list;
+   
+    margin-bottom: -30px;
+     @media screen and (min-width: 768px) {
+      @extend %flex-list;
+    }
   }
   
   .team-item {
@@ -12,8 +19,13 @@
     border-bottom-right-radius: 4px;
     box-shadow: var(--box-shadow);
     padding-bottom: 30px;
-    @extend %flex-item;
-    flex-basis: calc(100%/4 - 30px);
+    // @extend %flex-item;
+    // flex-basis: calc(100%/4 - 30px);
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100%/2 - 30px);
+      @extend %flex-item;
+     } 
   }
   .team-name,
   .team-position{
