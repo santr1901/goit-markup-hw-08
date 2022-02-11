@@ -1,18 +1,30 @@
 .work {
+  
     padding-bottom: 94px;
+    
   }
   
   .work-list {
-   @extend %flex-list;
-  }
+    
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+      margin-top: -30px;
+      
+    }
+  
   
   .work-item {
-    @extend %flex-item;
+    
+      margin-left: 30px;
+      margin-top: 30px;
     flex-basis: calc(100%/3 - 30px);
     position: relative;
+    
   }
   
   .work-name {
+    
     background-color: var(--work-name-bg);
     position: absolute;
     width: 100%;
@@ -21,7 +33,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
   
   .work-name-txt {

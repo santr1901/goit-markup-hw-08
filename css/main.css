@@ -93,6 +93,12 @@ address {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -560,9 +566,46 @@ address {
   max-width: 696px;
 }
 
-.advantage__item {
-  -ms-flex-preferred-size: calc(100%/4 - 30px);
-      flex-basis: calc(100%/4 - 30px);
+@media screen and (min-width: 768px) {
+  .advantage__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__item {
+    -ms-flex-preferred-size: calc(100%/2 - 30px);
+        flex-basis: calc(100%/2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage__item {
+    -ms-flex-preferred-size: calc(100%/4 - 30px);
+        flex-basis: calc(100%/4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .advantage__item-icon {
@@ -589,11 +632,29 @@ address {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .advantage__item-title {
+    text-align: center;
+  }
+}
+
 .work {
   padding-bottom: 94px;
 }
 
+.work-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
 .work-item {
+  margin-left: 30px;
+  margin-top: 30px;
   -ms-flex-preferred-size: calc(100%/3 - 30px);
       flex-basis: calc(100%/3 - 30px);
   position: relative;
@@ -693,6 +754,18 @@ address {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
 .team-item {
   background-color: var(--third-color);
   border-bottom-left-radius: 4px;
@@ -707,6 +780,15 @@ address {
   .team-item {
     -ms-flex-preferred-size: calc(100%/2 - 30px);
         flex-basis: calc(100%/2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item {
+    -ms-flex-preferred-size: calc(100%/4 - 30px);
+        flex-basis: calc(100%/4 - 30px);
     margin-left: 30px;
     margin-top: 30px;
   }
@@ -730,6 +812,16 @@ address {
   margin-bottom: 16px;
 }
 
+.clients {
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+  }
+}
+
 .clients-list {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -740,8 +832,26 @@ address {
 }
 
 .clients-item {
-  -ms-flex-preferred-size: calc(100%/6 - 30px);
-      flex-basis: calc(100%/6 - 30px);
+  -ms-flex-preferred-size: calc(100%/2 - 30px);
+      flex-basis: calc(100%/2 - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .clients-item {
+    -ms-flex-preferred-size: calc(100%/3 - 30px);
+        flex-basis: calc(100%/3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    -ms-flex-preferred-size: calc(100%/6 - 30px);
+        flex-basis: calc(100%/6 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .clients-link {
@@ -810,10 +920,6 @@ address {
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer-wrap-item:last-child {
-  margin-left: auto;
 }
 
 .footer-wrap {
@@ -1002,7 +1108,7 @@ address {
   line-height: 1.87;
 }
 
-.advantage__list, .work-list, .clients-list, .example-list {
+.clients-list, .example-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1012,7 +1118,7 @@ address {
   margin-top: -30px;
 }
 
-.advantage__item, .work-item, .clients-item, .example-item {
+.clients-item, .example-item {
   margin-left: 30px;
   margin-top: 30px;
 }
