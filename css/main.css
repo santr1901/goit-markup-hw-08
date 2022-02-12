@@ -478,7 +478,7 @@ address {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .header__container {
-    padding: 16px 0 16px 15px;
+    padding: 16px 23px 16px 15px;
   }
 }
 
@@ -639,17 +639,60 @@ address {
   }
 }
 
-.service {
-  width: 100%;
-  height: 100%;
-  background-color: var(--bkground-color-one);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-service)), to(var(--gradient-service))), url(../images/servicebg.jpg);
-  background-image: linear-gradient(var(--gradient-service), var(--gradient-service)), url(../images/servicebg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover, 1600px auto;
-  background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+@media screen and (min-width: 480px) {
+  .service {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bkground-color-one);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-service)), to(var(--gradient-service))), url(../images/servicebg-mob-1x.jpg);
+    background-image: linear-gradient(var(--gradient-service), var(--gradient-service)), url(../images/servicebg-mob-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover, 480px auto;
+    background-position: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .service {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-service)), to(var(--gradient-service))), url(../images/servicebg-mob-2x.jpg);
+    background-image: linear-gradient(var(--gradient-service), var(--gradient-service)), url(../images/servicebg-mob-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .service {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-service)), to(var(--gradient-service))), url(../images/servicebg-tab-1x.jpg);
+    background-image: linear-gradient(var(--gradient-service), var(--gradient-service)), url(../images/servicebg-tab-1x.jpg);
+    background-size: cover, 780px auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .service {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-service)), to(var(--gradient-service))), url(../images/servicebg-tab-2x.jpg);
+    background-image: linear-gradient(var(--gradient-service), var(--gradient-service)), url(../images/servicebg-tab-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .service {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-service)), to(var(--gradient-service))), url(../images/servicebg.jpg);
+    background-image: linear-gradient(var(--gradient-service), var(--gradient-service)), url(../images/servicebg.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: cover, 1600px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .service {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-service)), to(var(--gradient-service))), url(../images/servicebg-2x.jpg);
+    background-image: linear-gradient(var(--gradient-service), var(--gradient-service)), url(../images/servicebg-2x.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .service__items {
