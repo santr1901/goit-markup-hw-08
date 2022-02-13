@@ -34,6 +34,7 @@
   .example-link {
     display: flex;
     flex-direction: column;
+    height: 100%;
     transition: box-shadow var(--transition-time) var(--transition-function);
 
     &:hover, &:focus {
@@ -42,6 +43,7 @@
     
       &:hover .example-item-txt,
       &:focus .example-item-txt {
+        opacity: 1;
         transform: translateY(0) ;
       }
     }
@@ -56,6 +58,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--third-color);
   font-size: 18px;
@@ -72,6 +75,7 @@
     border-right: 1px solid var(--border-line-color);
     border-bottom: 1px solid var(--border-line-color);
     padding: 20px 24px;
+    flex-grow: 1;
   }
   
   .example-name {

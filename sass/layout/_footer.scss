@@ -26,11 +26,15 @@
   
   display: flex;
   flex-direction: column;
-
-  @media screen and (min-width: 480px) and  (max-width: 1199px) {
+  @media screen  and  (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen  and  (max-width: 1199px) {
+    flex-basis: calc(100%/2);
     text-align: center;
     align-items: center;
     padding-bottom: 60px;
+    
   }
  }
 
@@ -55,7 +59,7 @@
 
 .footer-wrap {
   display: flex;
-  @media screen and (min-width: 480px) and  (max-width: 767px) {
+  @media screen and  (max-width: 767px) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -86,6 +90,7 @@ color: var(--third-color);
 .footer-label {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 
@@ -98,16 +103,11 @@ transition: background-color var(--transition-time) var(--transition-function) ,
 
 .footer-form {
   display: flex;
-  @media screen and (min-width: 480px) and  (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
     flex-direction: column;
     align-items: center;
-  }
-  
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
@@ -116,7 +116,8 @@ transition: background-color var(--transition-time) var(--transition-function) ,
 }
 
 .footer-input {
-  width: 450px;
+    max-width: 450px;
+    width: 100%;
   height: 50px;
   box-sizing: border-box;
   
@@ -130,6 +131,10 @@ transition: background-color var(--transition-time) var(--transition-function) ,
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
   transition: border-color var(--transition-time) var(--transition-function);
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-right: 12px;
+  }
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
@@ -150,7 +155,7 @@ transition: background-color var(--transition-time) var(--transition-function) ,
 .footer-btn {
   display: flex;
   align-items: center;
-  @media screen and (min-width: 480px) and  (max-width: 1199px) {
+  @media screen and  (max-width: 1199px) {
     margin-top: 20px;
   }
 }
