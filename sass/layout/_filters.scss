@@ -1,6 +1,8 @@
 .filters-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -15px;
+    margin-left: -8px;
     justify-content: flex-start;
     margin-bottom: 40px;
     @media screen and (min-width: 768px) {
@@ -13,10 +15,16 @@
 
   }
 
-  .filters-item:not(:last-child) {
-    margin-bottom: 15px;
-    margin-right: 8px;
+  .filters-item {
+    margin-top: 15px;
+    margin-left: 8px;
+
   }
+
+  // .filters-item:not(:last-child) {
+  //   margin-bottom: 15px;
+  //   margin-right: 8px;
+  // }
   
   .filters-btn {
   font-family: inherit;
